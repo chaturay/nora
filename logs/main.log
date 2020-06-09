@@ -1,46 +1,19 @@
-2020-06-09 20:32:07,176:INFO:main  — Main script started
-2020-06-09 20:32:07,176:INFO:main  — Main Script finished
-2020-06-09 20:32:07,176:INFO:cleanup  — Log file cleanup starting 
-2020-06-09 20:32:07,176:INFO:cleanup  — Sucessfully deleted 0 file(s)
-2020-06-09 20:32:07,176:INFO:cleanup  — Log file cleanup finished.
-2020-06-09 20:32:07,176:INFO:backup  — Starting SBC backups 
-2020-06-09 20:32:07,398:ERROR:backup  — An Exception Occured
+2020-06-09 22:29:56,460:INFO:main  — Main script started
+2020-06-09 22:29:56,460:INFO:main  — Main Script finished
+2020-06-09 22:29:56,460:INFO:cleanup  — Log file cleanup starting 
+2020-06-09 22:29:56,460:INFO:cleanup  — Sucessfully deleted 0 file(s)
+2020-06-09 22:29:56,464:INFO:cleanup  — Log file cleanup finished.
+2020-06-09 22:29:56,464:INFO:backup  — Starting SBC backups 
+2020-06-09 22:29:56,693:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc01 completed
+2020-06-09 22:29:56,922:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc02 completed
+2020-06-09 22:30:17,935:ERROR:backup  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 63, in backup
-    sftp.get('/code/gzConfig/dataDoc.gz','K:\ackup')  # get a remote
-  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 249, in get
-    self._sftp.get(remotepath, localpath, callback=callback)
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\sftp_client.py", line 801, in get
-    with open(localpath, "wb") as fl:
-OSError: [Errno 22] Invalid argument: 'K:\x07ckup'
-2020-06-09 20:32:51,993:INFO:main  — Main script started
-2020-06-09 20:32:51,993:INFO:main  — Main Script finished
-2020-06-09 20:32:51,993:INFO:cleanup  — Log file cleanup starting 
-2020-06-09 20:32:51,993:INFO:cleanup  — Sucessfully deleted 0 file(s)
-2020-06-09 20:32:51,993:INFO:cleanup  — Log file cleanup finished.
-2020-06-09 20:32:51,993:INFO:backup  — Starting SBC backups 
-2020-06-09 20:32:52,749:INFO:backup  — Sucessfully backed 0 devices
-2020-06-09 20:32:52,749:INFO:backup  — Backup finished.
-2020-06-09 20:33:23,884:INFO:main  — Main script started
-2020-06-09 20:33:23,884:INFO:main  — Main Script finished
-2020-06-09 20:33:23,884:INFO:cleanup  — Log file cleanup starting 
-2020-06-09 20:33:23,884:INFO:cleanup  — Sucessfully deleted 0 file(s)
-2020-06-09 20:33:23,884:INFO:cleanup  — Log file cleanup finished.
-2020-06-09 20:33:23,884:INFO:backup  — Starting SBC backups 
-2020-06-09 20:33:24,102:ERROR:backup  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\main.py", line 63, in backup
-    sftp.get('/code/gzConfig/dataDoc.gz','K:\testbkup')  # get a remote
-  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 249, in get
-    self._sftp.get(remotepath, localpath, callback=callback)
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\sftp_client.py", line 801, in get
-    with open(localpath, "wb") as fl:
-OSError: [Errno 22] Invalid argument: 'K:\testbkup'
-2020-06-09 20:33:49,962:INFO:main  — Main script started
-2020-06-09 20:33:49,962:INFO:main  — Main Script finished
-2020-06-09 20:33:49,962:INFO:cleanup  — Log file cleanup starting 
-2020-06-09 20:33:49,962:INFO:cleanup  — Sucessfully deleted 0 file(s)
-2020-06-09 20:33:49,962:INFO:cleanup  — Log file cleanup finished.
-2020-06-09 20:33:49,962:INFO:backup  — Starting SBC backups 
-2020-06-09 20:33:50,744:INFO:backup  — Sucessfully backed 0 devices
-2020-06-09 20:33:50,744:INFO:backup  — Backup finished.
+  File "C:\nora\main.py", line 67, in backup
+    sftp=pysftp.Connection(ip_address,username=SBC_SFTP_USER,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
+  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "C:\Program Files\Python38\lib\site-packages\paramiko\transport.py", line 415, in __init__
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Unable to connect to 10.10.1.14: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
