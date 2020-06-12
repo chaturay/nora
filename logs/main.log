@@ -1,104 +1,297 @@
-2020-06-09 22:29:56,460:INFO:main  — Main script started
-2020-06-09 22:29:56,460:INFO:main  — Main Script finished
-2020-06-09 22:29:56,460:INFO:cleanup  — Log file cleanup starting 
-2020-06-09 22:29:56,460:INFO:cleanup  — Sucessfully deleted 0 file(s)
-2020-06-09 22:29:56,464:INFO:cleanup  — Log file cleanup finished.
-2020-06-09 22:29:56,464:INFO:backup  — Starting SBC backups 
-2020-06-09 22:29:56,693:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc01 completed
-2020-06-09 22:29:56,922:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc02 completed
-2020-06-09 22:30:17,935:ERROR:backup  — An Exception Occured
+2020-06-12 13:37:23,152:INFO:main  — Main script started
+2020-06-12 13:37:23,152:INFO:main  — Main Script finished
+2020-06-12 13:37:23,156:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:37:27,501:INFO:reports  — Found 1500 file(s)
+2020-06-12 13:37:27,505:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:39:51,380:INFO:main  — Main script started
+2020-06-12 13:39:51,380:INFO:main  — Main Script finished
+2020-06-12 13:39:51,384:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:39:55,695:INFO:reports  — Found 1455 file(s)
+2020-06-12 13:39:55,695:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:40:54,332:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 13:40:54,332:INFO:reports  — Loading complete
+2020-06-12 13:41:17,471:INFO:main  — Main script started
+2020-06-12 13:41:17,475:INFO:main  — Main Script finished
+2020-06-12 13:41:17,475:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:41:21,685:INFO:reports  — Found 1455 file(s)
+2020-06-12 13:41:21,685:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:41:27,060:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 13:41:27,060:INFO:reports  — Loading complete
+2020-06-12 13:51:04,224:INFO:main  — Main script started
+2020-06-12 13:51:04,224:INFO:main  — Main Script finished
+2020-06-12 13:51:04,228:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:51:08,666:INFO:reports  — Found 1455 file(s)
+2020-06-12 13:51:08,670:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:51:16,348:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 13:51:16,348:INFO:reports  — Loading complete
+2020-06-12 13:55:16,843:INFO:main  — Main script started
+2020-06-12 13:55:16,843:INFO:main  — Main Script finished
+2020-06-12 13:55:16,847:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:55:21,075:INFO:reports  — Found 1455 file(s)
+2020-06-12 13:55:21,075:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:55:21,083:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 67, in backup
-    sftp=pysftp.Connection(ip_address,username=SBC_SFTP_USER,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
-  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 140, in __init__
-    self._start_transport(host, port)
-  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 176, in _start_transport
-    self._transport = paramiko.Transport((host, port))
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\transport.py", line 415, in __init__
-    raise SSHException(
-paramiko.ssh_exception.SSHException: Unable to connect to 10.10.1.14: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
-2020-06-12 11:42:49,899:INFO:main  — Main script started
-2020-06-12 11:42:49,899:INFO:main  — Main Script finished
-2020-06-12 11:42:49,899:ERROR:main  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df=pd.concat(pd.read_csv(file))
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 271, in concat
+    op = _Concatenator(
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 306, in __init__
+    raise TypeError(
+TypeError: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+2020-06-12 13:57:04,923:INFO:main  — Main script started
+2020-06-12 13:57:04,923:INFO:main  — Main Script finished
+2020-06-12 13:57:04,923:INFO:reports  — Search for file(s) starting 
+2020-06-12 13:57:09,313:INFO:reports  — Found 1455 file(s)
+2020-06-12 13:57:09,313:INFO:reports  — Loading file(s) starting 
+2020-06-12 13:57:16,027:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 13:57:16,027:INFO:reports  — Loading complete
+2020-06-12 14:09:04,197:INFO:main  — Main script started
+2020-06-12 14:09:04,197:INFO:main  — Main Script finished
+2020-06-12 14:09:04,201:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:09:08,861:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:09:08,861:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:09:15,546:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 14:09:15,546:INFO:reports  — Loading complete
+2020-06-12 14:09:34,739:INFO:main  — Main script started
+2020-06-12 14:09:34,739:INFO:main  — Main Script finished
+2020-06-12 14:09:34,739:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:09:39,272:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:09:39,272:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:09:46,070:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 14:09:46,070:INFO:reports  — Loading complete
+2020-06-12 14:11:19,629:INFO:main  — Main script started
+2020-06-12 14:11:19,629:INFO:main  — Main Script finished
+2020-06-12 14:11:19,633:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:11:24,222:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:11:24,222:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:11:30,882:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 118, in main
-    reports("05/06/2020 00:00","07/06/2020 00:00")
-TypeError: reports() missing 1 required positional argument: 'root_path'
-2020-06-12 11:43:31,099:INFO:main  — Main script started
-2020-06-12 11:43:31,103:INFO:main  — Main Script finished
-2020-06-12 11:43:31,103:ERROR:main  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=df.to_datetime(df['TimeStamp'], format='%d%b%Y:%H:%M:%S.%f')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 5274, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'to_datetime'
+2020-06-12 14:12:16,211:INFO:main  — Main script started
+2020-06-12 14:12:16,211:INFO:main  — Main Script finished
+2020-06-12 14:12:16,216:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:12:20,674:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:12:20,674:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:12:27,406:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 118, in main
-    reports("05/06/2020 00:00","07/06/2020 00:00")
-TypeError: reports() missing 1 required positional argument: 'root_path'
-2020-06-12 11:44:35,169:INFO:main  — Main script started
-2020-06-12 11:44:35,169:INFO:main  — Main Script finished
-2020-06-12 11:44:35,185:ERROR:main  — An Exception Occured
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\tools\datetimes.py", line 432, in _convert_listlike_datetimes
+    values, tz = conversion.datetime_to_datetime64(arg)
+  File "pandas\_libs\tslibs\conversion.pyx", line 200, in pandas._libs.tslibs.conversion.datetime_to_datetime64
+TypeError: Unrecognized value type: <class 'int'>
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 118, in main
-    reports("05/06/2020 00:00","07/06/2020 00:00","K:\\")
-  File "C:\nora\main.py", line 91, in reports
-    begin_epoch = int(time.mktime(time.strptime(begin_datetime, pattern)))
-  File "C:\Program Files\Python38\lib\_strptime.py", line 562, in _strptime_time
-    tt = _strptime(data_string, format)[0]
-  File "C:\Program Files\Python38\lib\_strptime.py", line 349, in _strptime
-    raise ValueError("time data %r does not match format %r" %
-ValueError: time data '05/06/2020 00:00' does not match format '%d.%m.%Y %H:%M:%S'
-2020-06-12 11:45:40,327:INFO:main  — Main script started
-2020-06-12 11:45:40,327:INFO:main  — Main Script finished
-2020-06-12 11:45:40,331:INFO:reports  — Search fils starting 
-2020-06-12 11:45:40,499:ERROR:reports  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'], format='%d%b%Y:%H:%M:%S.%f')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\tools\datetimes.py", line 728, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\tools\datetimes.py", line 435, in _convert_listlike_datetimes
+    raise e
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\tools\datetimes.py", line 399, in _convert_listlike_datetimes
+    result, timezones = array_strptime(
+  File "pandas\_libs\tslibs\strptime.pyx", line 142, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '1589464799' does not match format '%d%b%Y:%H:%M:%S.%f' (match)
+2020-06-12 14:13:07,095:INFO:main  — Main script started
+2020-06-12 14:13:07,095:INFO:main  — Main Script finished
+2020-06-12 14:13:07,095:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:13:11,302:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:13:11,302:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:13:17,926:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 14:13:17,926:INFO:reports  — Loading complete
+2020-06-12 14:14:17,070:INFO:main  — Main script started
+2020-06-12 14:14:17,070:INFO:main  — Main Script finished
+2020-06-12 14:14:17,074:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:14:21,306:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:14:21,306:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:14:28,059:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 14:14:28,059:INFO:reports  — Loading complete
+2020-06-12 14:16:23,230:INFO:main  — Main script started
+2020-06-12 14:16:23,230:INFO:main  — Main Script finished
+2020-06-12 14:16:23,234:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:16:27,437:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:16:27,437:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:16:34,016:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 104, in reports
-    count+=1
-UnboundLocalError: local variable 'count' referenced before assignment
-2020-06-12 11:46:15,614:INFO:main  — Main script started
-2020-06-12 11:46:15,614:INFO:main  — Main Script finished
-2020-06-12 11:46:15,618:INFO:reports  — Search fils starting 
-2020-06-12 11:46:15,642:ERROR:reports  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],units='s')
+TypeError: to_datetime() got an unexpected keyword argument 'units'
+2020-06-12 14:16:57,450:INFO:main  — Main script started
+2020-06-12 14:16:57,450:INFO:main  — Main Script finished
+2020-06-12 14:16:57,454:INFO:reports  — Search for file(s) starting 
+2020-06-12 14:17:01,638:INFO:reports  — Found 1455 file(s)
+2020-06-12 14:17:01,638:INFO:reports  — Loading file(s) starting 
+2020-06-12 14:17:08,332:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 14:17:08,332:INFO:reports  — Loading complete
+2020-06-12 15:08:05,158:INFO:main  — Main script started
+2020-06-12 15:08:05,158:INFO:main  — Main Script finished
+2020-06-12 15:08:05,162:INFO:reports  — Search for file(s) starting 
+2020-06-12 15:08:09,544:INFO:reports  — Found 1455 file(s)
+2020-06-12 15:08:09,544:INFO:reports  — Loading file(s) starting 
+2020-06-12 15:08:16,403:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 104, in reports
-    count+=1
-UnboundLocalError: local variable 'count' referenced before assignment
-2020-06-12 11:48:05,941:INFO:main  — Main script started
-2020-06-12 11:48:05,941:INFO:main  — Main Script finished
-2020-06-12 11:48:05,941:INFO:reports  — Search fils starting 
-2020-06-12 11:48:05,962:ERROR:reports  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('UTC').tz_convert('Australia/Sydney')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9525, in tz_localize
+    ax = _tz_localize(ax, tz, ambiguous, nonexistent)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9507, in _tz_localize
+    raise TypeError(
+TypeError: index is not a valid DatetimeIndex or PeriodIndex
+2020-06-12 15:10:26,618:INFO:main  — Main script started
+2020-06-12 15:10:26,618:INFO:main  — Main Script finished
+2020-06-12 15:10:26,622:INFO:reports  — Search for file(s) starting 
+2020-06-12 15:10:31,623:INFO:reports  — Found 1455 file(s)
+2020-06-12 15:10:31,623:INFO:reports  — Loading file(s) starting 
+2020-06-12 15:10:39,519:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 104, in reports
-    count+=1
-UnboundLocalError: local variable 'count' referenced before assignment
-2020-06-12 11:49:53,155:INFO:main  — Main script started
-2020-06-12 11:49:53,155:INFO:main  — Main Script finished
-2020-06-12 11:49:53,159:INFO:reports  — Search fils starting 
-2020-06-12 11:49:53,491:ERROR:reports  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('UTC').tz_convert('US/Eastern')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9525, in tz_localize
+    ax = _tz_localize(ax, tz, ambiguous, nonexistent)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9507, in _tz_localize
+    raise TypeError(
+TypeError: index is not a valid DatetimeIndex or PeriodIndex
+2020-06-12 15:13:20,604:INFO:main  — Main script started
+2020-06-12 15:13:20,604:INFO:main  — Main Script finished
+2020-06-12 15:13:20,608:INFO:reports  — Search for file(s) starting 
+2020-06-12 15:13:24,882:INFO:reports  — Found 1455 file(s)
+2020-06-12 15:13:24,882:INFO:reports  — Loading file(s) starting 
+2020-06-12 15:13:31,765:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 104, in reports
-    count+=1
-UnboundLocalError: local variable 'count' referenced before assignment
-2020-06-12 11:50:59,027:INFO:main  — Main script started
-2020-06-12 11:50:59,027:INFO:main  — Main Script finished
-2020-06-12 11:50:59,031:INFO:reports  — Search fils starting 
-2020-06-12 11:53:13,309:ERROR:reports  — An Exception Occured
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('UTC')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9525, in tz_localize
+    ax = _tz_localize(ax, tz, ambiguous, nonexistent)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9507, in _tz_localize
+    raise TypeError(
+TypeError: index is not a valid DatetimeIndex or PeriodIndex
+2020-06-12 20:23:30,935:INFO:main  — Main script started
+2020-06-12 20:23:30,935:INFO:main  — Main Script finished
+2020-06-12 20:23:30,939:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:23:35,981:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:23:35,981:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:23:43,436:ERROR:reports  — An Exception Occured
 Traceback (most recent call last):
-  File "C:\nora\main.py", line 104, in reports
-    print(full_path)
-  File "C:\Program Files\Python38\lib\idlelib\run.py", line 437, in write
-    return self.shell.write(s, self.tags)
-  File "C:\Program Files\Python38\lib\idlelib\rpc.py", line 607, in __call__
-    value = self.sockio.remotecall(self.oid, self.name, args, kwargs)
-  File "C:\Program Files\Python38\lib\idlelib\rpc.py", line 219, in remotecall
-    return self.asyncreturn(seq)
-  File "C:\Program Files\Python38\lib\idlelib\rpc.py", line 248, in asyncreturn
-    response = self.getresponse(seq, wait=0.05)
-  File "C:\Program Files\Python38\lib\idlelib\rpc.py", line 291, in getresponse
-    response = self._getresponse(myseq, wait)
-  File "C:\Program Files\Python38\lib\idlelib\rpc.py", line 319, in _getresponse
-    cvar.wait()
-  File "C:\Program Files\Python38\lib\threading.py", line 302, in wait
-    waiter.acquire()
-KeyboardInterrupt
-2020-06-12 11:54:35,514:INFO:main  — Main script started
-2020-06-12 11:54:35,514:INFO:main  — Main Script finished
-2020-06-12 11:54:35,518:INFO:reports  — Search fils starting 
-2020-06-12 11:54:35,522:INFO:reports  — Found 0 file(s)
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('Antarctica/South_Pole')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9525, in tz_localize
+    ax = _tz_localize(ax, tz, ambiguous, nonexistent)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9507, in _tz_localize
+    raise TypeError(
+TypeError: index is not a valid DatetimeIndex or PeriodIndex
+2020-06-12 20:32:01,478:INFO:main  — Main script started
+2020-06-12 20:32:01,478:INFO:main  — Main Script finished
+2020-06-12 20:32:01,478:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:32:06,464:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:32:06,464:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:32:06,464:ERROR:reports  — An Exception Occured
+Traceback (most recent call last):
+  File "C:\nora\main.py", line 117, in reports
+    df=pd.concat((pd.read_csv(file,use_cols=[0,1]) for file in file_list))
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 271, in concat
+    op = _Concatenator(
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 326, in __init__
+    objs = list(objs)
+  File "C:\nora\main.py", line 117, in <genexpr>
+    df=pd.concat((pd.read_csv(file,use_cols=[0,1]) for file in file_list))
+TypeError: parser_f() got an unexpected keyword argument 'use_cols'
+2020-06-12 20:32:26,387:INFO:main  — Main script started
+2020-06-12 20:32:26,387:INFO:main  — Main Script finished
+2020-06-12 20:32:26,392:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:32:31,370:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:32:31,370:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:32:31,370:ERROR:reports  — An Exception Occured
+Traceback (most recent call last):
+  File "C:\nora\main.py", line 117, in reports
+    df=pd.concat((pd.read_csv(file,use_cols=[0,1],index_col=[0]) for file in file_list))
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 271, in concat
+    op = _Concatenator(
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\reshape\concat.py", line 326, in __init__
+    objs = list(objs)
+  File "C:\nora\main.py", line 117, in <genexpr>
+    df=pd.concat((pd.read_csv(file,use_cols=[0,1],index_col=[0]) for file in file_list))
+TypeError: parser_f() got an unexpected keyword argument 'use_cols'
+2020-06-12 20:32:53,188:INFO:main  — Main script started
+2020-06-12 20:32:53,188:INFO:main  — Main Script finished
+2020-06-12 20:32:53,192:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:32:57,492:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:32:57,492:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:33:01,532:ERROR:reports  — An Exception Occured
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'TimeStamp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('Antarctica/South_Pole')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\frame.py", line 2800, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'TimeStamp'
+2020-06-12 20:34:11,065:INFO:main  — Main script started
+2020-06-12 20:34:11,065:INFO:main  — Main Script finished
+2020-06-12 20:34:11,065:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:34:15,503:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:34:15,503:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:34:18,867:ERROR:reports  — An Exception Occured
+Traceback (most recent call last):
+  File "C:\nora\main.py", line 118, in reports
+    df['TimeStamp']=pd.to_datetime(df['TimeStamp'],unit='s').tz_localize('Antarctica/South_Pole')
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9525, in tz_localize
+    ax = _tz_localize(ax, tz, ambiguous, nonexistent)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 9507, in _tz_localize
+    raise TypeError(
+TypeError: index is not a valid DatetimeIndex or PeriodIndex
+2020-06-12 20:34:53,503:INFO:main  — Main script started
+2020-06-12 20:34:53,503:INFO:main  — Main Script finished
+2020-06-12 20:34:53,507:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:34:58,460:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:34:58,460:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:35:02,432:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:35:02,432:INFO:reports  — Loading complete
+2020-06-12 20:39:17,910:INFO:main  — Main script started
+2020-06-12 20:39:17,910:INFO:main  — Main Script finished
+2020-06-12 20:39:17,914:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:39:23,210:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:39:23,210:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:39:27,350:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:39:27,350:INFO:reports  — Loading complete
+2020-06-12 20:42:45,533:INFO:main  — Main script started
+2020-06-12 20:42:45,533:INFO:main  — Main Script finished
+2020-06-12 20:42:45,537:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:42:50,180:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:42:50,180:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:42:53,708:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:42:53,708:INFO:reports  — Loading complete
+2020-06-12 20:54:58,155:INFO:main  — Main script started
+2020-06-12 20:54:58,155:INFO:main  — Main Script finished
+2020-06-12 20:54:58,159:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:55:03,192:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:55:03,192:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:55:07,070:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:55:07,315:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:55:07,315:INFO:reports  — Loading complete
+2020-06-12 20:56:46,882:INFO:main  — Main script started
+2020-06-12 20:56:46,882:INFO:main  — Main Script finished
+2020-06-12 20:56:46,886:INFO:reports  — Search for file(s) starting 
+2020-06-12 20:56:51,312:INFO:reports  — Found 1455 file(s)
+2020-06-12 20:56:51,312:INFO:reports  — Loading file(s) starting 
+2020-06-12 20:56:54,755:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:56:54,953:INFO:reports  — Loaded 1455 file(s) 
+2020-06-12 20:56:54,953:INFO:reports  — Loading complete

@@ -4,6 +4,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import configparser
 import pysftp
+import pandas as pd
 
 FORMATTER = logging.Formatter("%(asctime)s:%(levelname)s:%(funcName)s  — %(message)s")
 
@@ -92,8 +93,9 @@ def reports(begin_datetime,end_datetime,root_path):
     end_epoch = int(time.mktime(time.strptime(end_datetime, pattern)))
         
     logger=logging.getLogger("MAIN")
-    logger.info("Search fils starting ")
+    logger.info("Search for file(s) starting ")
     count=0
+    file_list=[]
 
     try:
         for root, dirs, files in os.walk(root_path, topdown=False):
@@ -101,15 +103,32 @@ def reports(begin_datetime,end_datetime,root_path):
                 full_path = os.path.join(root, file)
                 stat = os.stat(full_path)
                 if ((stat.st_mtime <= end_epoch) & (stat.st_mtime >= begin_epoch)):
-                        print(full_path)
+                        file_list.append(full_path)
                         count+=1
     except:
          logger.exception("An Exception Occured")
 
     else:
-        logger.info("Found %s file(s)",count)
-        
+        logger.info("Found %s file(s)",len(file_list))
 
+
+    try:
+        logger.info("Loading file(s) starting ")
+        df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization']) for file in file_list))
+        logger.info("Loaded %s file(s) ",len(file_list))
+        
+        df['TimeStamp']=pd.DatetimeIndex(pd.to_datetime(df['TimeStamp'],unit='s')).tz_localize('UTC').tz_convert('Australia/Sydney')
+        df['Date'] = df['TimeStamp'].dt.strftime('%y/%d/%m')
+        df.groupby('Date')
+        
+    except:
+         logger.exception("An Exception Occured")
+
+    else:
+        print(df)
+        logger.info("Loaded %s file(s) ",len(file_list))
+        logger.info("Loading complete")
+                          
 def main():
 
     try:
@@ -119,7 +138,7 @@ def main():
 
         #cleanup(5,"c:\\temp\\")
         #backup()
-        reports("15/05/2020 00:00:00","10/06/2020 00:00:00","K:\HDR\CY-SBC01\system") 
+        reports("15/05/2020 00:00:00","16/05/2020 00:15:00","K:\HDR\CY-SBC01\system\\")
 
     except:
         logger_main.exception("An Exception Occured")    
