@@ -56,6 +56,8 @@ def cleanup (number_of_days,root_path):
 def backup():
 
     logger=logging.getLogger("MAIN")
+    logger_backup=setup_logger("BACKUP",LOG_FILE_PATH,MAIN_LOG_SIZE,MAIN_LOG_FILES)
+    
     logger.info("Starting SBC backups ")
     count=0
     timestr = time.strftime("%Y%m%d%H%M%S-")
@@ -82,9 +84,31 @@ def backup():
         sftp.close()
     
         
-#def reports():
-    
-    
+def reports(begin_datetime,end_datetime,root_path):
+
+
+    pattern = '%d/%m/%Y %H:%M:%S'
+    begin_epoch = int(time.mktime(time.strptime(begin_datetime, pattern)))
+    end_epoch = int(time.mktime(time.strptime(end_datetime, pattern)))
+        
+    logger=logging.getLogger("MAIN")
+    logger.info("Search fils starting ")
+    count=0
+
+    try:
+        for root, dirs, files in os.walk(root_path, topdown=False):
+            for file in files:
+                full_path = os.path.join(root, file)
+                stat = os.stat(full_path)
+                if ((stat.st_mtime <= end_epoch) & (stat.st_mtime >= begin_epoch)):
+                        print(full_path)
+                        count+=1
+    except:
+         logger.exception("An Exception Occured")
+
+    else:
+        logger.info("Found %s file(s)",count)
+        
 
 def main():
 
@@ -93,8 +117,9 @@ def main():
         logger_main.info("Main script started")
         logger_main.info("Main Script finished")
 
-        cleanup(5,"c:\\temp\\")
-        backup()
+        #cleanup(5,"c:\\temp\\")
+        #backup()
+        reports("15/05/2020 00:00:00","10/06/2020 00:00:00","K:\HDR\CY-SBC01\system") 
 
     except:
         logger_main.exception("An Exception Occured")    
