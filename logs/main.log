@@ -295,3 +295,98 @@ TypeError: index is not a valid DatetimeIndex or PeriodIndex
 2020-06-12 20:56:54,755:INFO:reports  — Loaded 1455 file(s) 
 2020-06-12 20:56:54,953:INFO:reports  — Loaded 1455 file(s) 
 2020-06-12 20:56:54,953:INFO:reports  — Loading complete
+2020-06-14 22:51:33,287:INFO:main  — Main script started
+2020-06-14 22:51:33,287:INFO:main  — Main Script finished
+2020-06-14 22:51:33,300:INFO:reports  — Search for file(s) starting 
+2020-06-14 22:51:38,124:INFO:reports  — Found 1455 file(s)
+2020-06-14 22:51:38,124:INFO:reports  — Loading file(s) starting 
+2020-06-14 22:51:50,708:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:51:53,390:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:51:53,390:INFO:reports  — Loading complete
+2020-06-14 22:57:08,746:INFO:main  — Main script started
+2020-06-14 22:57:08,746:INFO:main  — Main Script finished
+2020-06-14 22:57:08,750:INFO:reports  — Search for file(s) starting 
+2020-06-14 22:57:13,404:INFO:reports  — Found 1455 file(s)
+2020-06-14 22:57:13,404:INFO:reports  — Loading file(s) starting 
+2020-06-14 22:57:16,651:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:57:16,828:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:57:16,828:INFO:reports  — Loading complete
+2020-06-14 22:58:10,877:INFO:main  — Main script started
+2020-06-14 22:58:10,877:INFO:main  — Main Script finished
+2020-06-14 22:58:10,877:INFO:reports  — Search for file(s) starting 
+2020-06-14 22:58:15,641:INFO:reports  — Found 1455 file(s)
+2020-06-14 22:58:15,641:INFO:reports  — Loading file(s) starting 
+2020-06-14 22:58:19,056:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:58:19,257:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:58:19,257:INFO:reports  — Loading complete
+2020-06-14 22:58:37,091:INFO:main  — Main script started
+2020-06-14 22:58:37,091:INFO:main  — Main Script finished
+2020-06-14 22:58:37,095:INFO:reports  — Search for file(s) starting 
+2020-06-14 22:58:41,842:INFO:reports  — Found 1455 file(s)
+2020-06-14 22:58:41,842:INFO:reports  — Loading file(s) starting 
+2020-06-14 22:58:45,313:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:58:45,518:INFO:reports  — Loaded 1455 file(s) 
+2020-06-14 22:58:45,518:INFO:reports  — Loading complete
+2020-06-15 11:33:21,312:INFO:main  — Main script started
+2020-06-15 11:33:21,316:INFO:main  — Main Script finished
+2020-06-15 11:33:21,336:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:33:49,285:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:33:49,285:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:34:04,188:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:34:07,728:ERROR:reports  — An Exception Occured
+Traceback (most recent call last):
+  File "C:\nora\main.py", line 122, in reports
+    df=df.groupby(['Date'])['Max'].count()
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\groupby\generic.py", line 1603, in __getitem__
+    return super().__getitem__(key)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\base.py", line 230, in __getitem__
+    raise KeyError(f"Column not found: {key}")
+KeyError: 'Column not found: Max'
+2020-06-15 11:35:11,942:INFO:main  — Main script started
+2020-06-15 11:35:11,942:INFO:main  — Main Script finished
+2020-06-15 11:35:11,946:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:35:17,585:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:35:17,589:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:35:21,277:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:35:21,515:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:35:21,515:INFO:reports  — Loading complete
+2020-06-15 11:35:51,911:INFO:main  — Main script started
+2020-06-15 11:35:51,911:INFO:main  — Main Script finished
+2020-06-15 11:35:51,915:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:35:57,389:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:35:57,389:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:36:00,989:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:36:01,231:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:36:01,231:INFO:reports  — Loading complete
+2020-06-15 11:37:58,521:INFO:main  — Main script started
+2020-06-15 11:37:58,521:INFO:main  — Main Script finished
+2020-06-15 11:37:58,525:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:38:04,056:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:38:04,056:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:38:07,939:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:38:08,191:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:38:08,195:INFO:reports  — Loading complete
+2020-06-15 11:40:58,839:INFO:main  — Main script started
+2020-06-15 11:40:58,839:INFO:main  — Main Script finished
+2020-06-15 11:40:58,843:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:41:04,210:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:41:04,210:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:41:07,878:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:41:08,115:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:41:08,115:INFO:reports  — Loading complete
+2020-06-15 11:43:34,801:INFO:main  — Main script started
+2020-06-15 11:43:34,805:INFO:main  — Main Script finished
+2020-06-15 11:43:34,805:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:43:40,271:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:43:40,271:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:43:44,211:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:43:44,470:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:43:44,470:INFO:reports  — Loading complete
+2020-06-15 11:44:32,145:INFO:main  — Main script started
+2020-06-15 11:44:32,149:INFO:main  — Main Script finished
+2020-06-15 11:44:32,149:INFO:reports  — Search for file(s) starting 
+2020-06-15 11:44:37,664:INFO:reports  — Found 1455 file(s)
+2020-06-15 11:44:37,664:INFO:reports  — Loading file(s) starting 
+2020-06-15 11:44:41,610:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:44:41,833:INFO:reports  — Loaded 1455 file(s) 
+2020-06-15 11:44:41,833:INFO:reports  — Loading complete

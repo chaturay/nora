@@ -114,12 +114,12 @@ def reports(begin_datetime,end_datetime,root_path):
 
     try:
         logger.info("Loading file(s) starting ")
-        df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization']) for file in file_list))
+        df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization','Memory Utilization','Signaling Sessions']) for file in file_list))
         logger.info("Loaded %s file(s) ",len(file_list))
         
         df['TimeStamp']=pd.DatetimeIndex(pd.to_datetime(df['TimeStamp'],unit='s')).tz_localize('UTC').tz_convert('Australia/Sydney')
         df['Date'] = df['TimeStamp'].dt.strftime('%y/%d/%m')
-        df.groupby('Date')
+        df=df.groupby(['Date'])[['CPU Utilization','Memory Utilization','Signaling Sessions']].max()
         
     except:
          logger.exception("An Exception Occured")
