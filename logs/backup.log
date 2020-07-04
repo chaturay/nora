@@ -6,3 +6,19 @@
 2020-07-04 19:57:19,527 [INFO] [main]  backed up 3 device(s) sucessfully. 0 device(s) failed
 2020-07-04 19:57:19,527 [INFO] [main]  **** backup script finished ****
 
+2020-07-04 20:02:18,870 [INFO] [main]  **** backup script started *****
+2020-07-04 20:02:18,870 [INFO] [main]  starting backup of 3 device(s)
+2020-07-04 20:02:19,127 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 20:02:19,373 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 20:02:19,606 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 20:02:19,610 [INFO] [main]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-04 20:02:19,610 [INFO] [main]  **** backup script finished ****
+
+2020-07-04 20:07:18,874 [INFO] [main]  **** backup script started *****
+2020-07-04 20:07:18,874 [INFO] [main]  starting backup of 3 device(s)
+2020-07-04 20:07:19,119 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 20:07:19,357 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 20:07:19,594 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 20:07:19,594 [INFO] [main]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-04 20:07:19,594 [INFO] [main]  **** backup script finished ****
+

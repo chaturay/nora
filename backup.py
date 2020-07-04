@@ -16,7 +16,7 @@ PRIVATE_KEY_PATH="C:\ProgramData\ssh\ssh_host_rsa_key"
 REMOTE_FILE_PATH='/code/gzConfig/dataDoc.gz'
 LOCAL_FILE_PATH='K:\BACKUP\\'
 
-def main():
+def backup():
     
     try:
         logger_backup=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX)
@@ -76,4 +76,4 @@ def main():
      
         
 if __name__ == '__main__':
-        main()       
+        backup()       
