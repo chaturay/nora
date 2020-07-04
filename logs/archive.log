@@ -1,6 +1,3 @@
-2020-07-04 17:15:45,019:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed
-2020-07-04 17:15:45,256:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed
-2020-07-04 17:15:45,477:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed
-2020-07-04 17:37:19,221:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed sucessfully
-2020-07-04 17:37:19,458:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed sucessfully
-2020-07-04 17:37:19,696:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed sucessfully
+2020-07-04 19:57:19,097 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc01 completed sucessfully to K:\BACKUP\20200704195718-m-cba-nsw-bellavista-sbc01.gz
+2020-07-04 19:57:19,310 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc02 completed sucessfully to K:\BACKUP\20200704195718-m-cba-nsw-bellavista-sbc02.gz
+2020-07-04 19:57:19,527 [INFO] [main]  backup of m-cba-nsw-bellavista-sbc03 completed sucessfully to K:\BACKUP\20200704195718-m-cba-nsw-bellavista-sbc03.gz
