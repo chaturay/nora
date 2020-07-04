@@ -1,54 +1,27 @@
-2020-07-03 19:51:48,876:INFO:main  — backup script started
-2020-07-03 19:51:48,876:ERROR:main  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\backup.py", line 45, in main
-    backup()
-  File "C:\nora\backup.py", line 14, in backup
-    logger=logging.getLogger("BACKUP")
-NameError: name 'logging' is not defined
-2020-07-03 19:53:15,824:INFO:main  — backup script started
-2020-07-03 19:53:15,824:INFO:backup  — starting SBC backups 
-2020-07-03 19:53:16,235:ERROR:backup  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\backup.py", line 24, in backup
-    sftp=pysftp.Connection(ip_address,username=SBC_SFTP_USER,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
-  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 143, in __init__
-    self._transport.connect(**self._tconnect)
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\transport.py", line 1333, in connect
-    self.auth_publickey(username, pkey)
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\transport.py", line 1580, in auth_publickey
-    return self.auth_handler.wait_for_response(my_event)
-  File "C:\Program Files\Python38\lib\site-packages\paramiko\auth_handler.py", line 250, in wait_for_response
-    raise e
-paramiko.ssh_exception.AuthenticationException: Authentication failed.
-2020-07-03 19:53:16,300:ERROR:main  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\backup.py", line 46, in main
-    backup()
-  File "C:\nora\backup.py", line 39, in backup
-    sftp.close()
-UnboundLocalError: local variable 'sftp' referenced before assignment
-2020-07-03 20:03:43,199:INFO:main  — backup script started
-2020-07-03 20:03:43,199:INFO:backup  — starting SBC backups 
-2020-07-03 20:03:43,420:ERROR:backup  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\backup.py", line 25, in backup
-    sftp.get(REMOTE_FILE_PATH,LOCAL_FILE_PATH+timestr+device_name+".gz")
-NameError: name 'REMOTE_FILE_PATH' is not defined
-2020-07-03 20:03:43,444:INFO:main  — backup script finished
-2020-07-03 20:04:49,024:INFO:main  — backup script started
-2020-07-03 20:04:49,024:INFO:backup  — starting SBC backups 
-2020-07-03 20:04:49,261:ERROR:backup  — An Exception Occured
-Traceback (most recent call last):
-  File "C:\nora\backup.py", line 26, in backup
-    sftp.get(REMOTE_FILE_PATH,LOCAL_FILE_PATH+timestr+device_name+".gz")
-NameError: name 'LOCAL_FILE_PATH' is not defined
-2020-07-03 20:04:49,261:INFO:main  — backup script finished
-2020-07-03 20:05:26,656:INFO:main  — backup script started
-2020-07-03 20:05:26,656:INFO:backup  — starting SBC backups 
-2020-07-03 20:05:26,905:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc01 completed
-2020-07-03 20:05:27,126:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc02 completed
-2020-07-03 20:05:27,347:INFO:backup  — Backup of m-cba-nsw-bellavista-sbc03 completed
-2020-07-03 20:05:27,347:INFO:backup  — Sucessfully backed up 3 device(s)
-2020-07-03 20:05:27,347:INFO:backup  — Backup finished.
-2020-07-03 20:05:27,347:INFO:main  — backup script finished
+2020-07-04 17:14:41,083:INFO:main  — backup script started
+2020-07-04 17:14:41,083:INFO:main  — starting device backups
+2020-07-04 17:14:41,304:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 17:14:41,304:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 17:14:41,525:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 17:14:41,525:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 17:14:41,747:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 17:14:41,747:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 17:14:41,747:INFO:main  — backup script finished.
+2020-07-04 17:14:41,747:INFO:main  — sucessfully backed up 3 device(s)
+2020-07-04 17:14:41,747:INFO:main  — backup script finished
+2020-07-04 17:15:44,774:INFO:main  — backup script started
+2020-07-04 17:15:44,774:INFO:main  — starting device backups
+2020-07-04 17:15:45,015:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 17:15:45,252:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 17:15:45,477:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 17:15:45,477:INFO:main  — backup script finished.
+2020-07-04 17:15:45,477:INFO:main  — sucessfully backed up 3 device(s)
+2020-07-04 17:15:45,477:INFO:main  — backup script finished
+2020-07-04 17:37:18,931:INFO:main  — backup script started
+2020-07-04 17:37:18,931:INFO:main  — starting device backups
+2020-07-04 17:37:19,221:INFO:main  — backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-04 17:37:19,458:INFO:main  — backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-04 17:37:19,696:INFO:main  — backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-04 17:37:19,696:INFO:main  — backup script finished.
+2020-07-04 17:37:19,696:INFO:main  — sucessfully backed up 3 device(s)
+2020-07-04 17:37:19,696:INFO:main  — backup script finished

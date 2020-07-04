@@ -1,0 +1,11 @@
+{
+	"backup":{
+		"sbc_sftp_user":"sftp",
+		"log_file_path":"logs/backup.log",
+		"log_file_size":1024*1024",
+		"num_log_files":"10",
+		"private_key_path":"C:\ProgramData\ssh\ssh_host_rsa_key",
+		"remote_file_path":"/code/gzConfig/dataDoc.gz",
+		"local_file_path":"K:\\"
+	}
+}
