@@ -19,8 +19,7 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
     begin_epoch=begin_datetime.timestamp()
     end_epoch=end_datetime.timestamp()
 
-    print(root_path,device_name)
-    
+      
         
     logger=logging.getLogger("REPORTS")
     logger.info("search for file(s) starting ")
@@ -34,44 +33,49 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
                 stat = os.stat(full_path)
                 if ((stat.st_mtime <= end_epoch) & (stat.st_mtime >= begin_epoch)):
                         file_list.append(full_path)
-                        file_count+=1
+                        
     except Exceptionn:
          logger.exception("An Exception Occured")
          
 
     else:
-        logger.info("Found %s file(s)",len(file_list))
+        file_count=len(file_list)
 
-    try:
-        logger.info("Loading file(s) starting ")
-        df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization','Memory Utilization','Signaling Sessions']) for file in file_list))
-        logger.info("Loaded %s file(s) ",len(file_list))
+        if file_count > 0:
+            logger.info("found %s file(s)",file_count)
+    
+            try:
+                logger.info("Loading file(s) starting ")
+                df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization','Memory Utilization','Signaling Sessions']) for file in file_list))
+                logger.info("Loaded %s file(s) ",len(file_list))
 
-        tic = time.perf_counter()
-        logger.info("processing data... this may take a while")
-        df['TimeStamp']=pd.DatetimeIndex(pd.to_datetime(df['TimeStamp'],unit='s')).tz_localize('UTC').tz_convert('Australia/Sydney')
-        df['Date'] = df['TimeStamp'].dt.strftime('%d/%m/%y')
-        df=df.groupby(['Date'])[['CPU Utilization','Memory Utilization','Signaling Sessions']].max()
+                tic = time.perf_counter()
+                logger.info("processing data... this may take a while")
+                df['TimeStamp']=pd.DatetimeIndex(pd.to_datetime(df['TimeStamp'],unit='s')).tz_localize('UTC').tz_convert('Australia/Sydney')
+                df['Date'] = df['TimeStamp'].dt.strftime('%d/%m/%y')
+                df=df.groupby(['Date'])[['CPU Utilization','Memory Utilization','Signaling Sessions']].max()
 
-        df.rename(columns = {'CPU Utilization':'CPU Utilization Max', 'Memory Utilization':'Memory Utilization Max','Signaling Sessions':'Signaling Sessions Max'}, inplace = True) 
-        
-        
-    except:
-         logger.exception("An Exception Occured")
+                df.rename(columns = {'CPU Utilization':'CPU Utilization Max', 'Memory Utilization':'Memory Utilization Max','Signaling Sessions':'Signaling Sessions Max'}, inplace = True) 
+                
+                
+            except:
+                 logger.exception("An Exception Occured")
 
-    else:
-        toc = time.perf_counter()
-        logger.info(f"processing data complete. Operation took {toc-tic:0.4f} seconds")
+            else:
+                toc = time.perf_counter()
+                logger.info(f"processing data complete. Operation took {toc-tic:0.4f} seconds")
 
-    try:
-        logger.info("Writing report to file - %s",device_name)
-        df.to_csv(device_name)
-            
-    except:
-         logger.exception("An Exception Occured")
-         
-    else:
-        logger.info("Report writing completed")
+            try:
+                logger.info("Writing report to file - %s",device_name)
+                df.to_csv(device_name)
+                    
+            except:
+                 logger.exception("An Exception Occured")
+                 
+            else:
+                logger.info("Report writing completed")
+        else:
+            logger.info("no files found matching the date range found for %s",root_path)
   
 if __name__ == '__main__':
 

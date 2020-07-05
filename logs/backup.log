@@ -2521,3 +2521,43 @@ AttributeError: 'NoneType' object has no attribute 'close'
 2020-07-05 21:57:20,027 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
 2020-07-05 21:57:20,027 [INFO] [backup]  **** backup script finished ****
 
+2020-07-05 22:02:19,373 [INFO] [backup]  **** backup script started *****
+2020-07-05 22:02:19,373 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-05 22:02:19,615 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-05 22:02:19,845 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-05 22:02:20,119 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-05 22:02:20,119 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-05 22:02:20,119 [INFO] [backup]  **** backup script finished ****
+
+2020-07-05 22:07:19,364 [INFO] [backup]  **** backup script started *****
+2020-07-05 22:07:19,368 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-05 22:07:19,642 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-05 22:07:19,916 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-05 22:07:20,145 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-05 22:07:20,145 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-05 22:07:20,145 [INFO] [backup]  **** backup script finished ****
+
+2020-07-05 22:12:19,366 [INFO] [backup]  **** backup script started *****
+2020-07-05 22:12:19,366 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-05 22:12:19,624 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-05 22:12:19,849 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-05 22:12:20,084 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-05 22:12:20,084 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-05 22:12:20,084 [INFO] [backup]  **** backup script finished ****
+
+2020-07-05 22:17:19,336 [INFO] [backup]  **** backup script started *****
+2020-07-05 22:17:19,336 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-05 22:17:19,578 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-05 22:17:19,809 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-05 22:17:20,033 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-05 22:17:20,033 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-05 22:17:20,033 [INFO] [backup]  **** backup script finished ****
+
+2020-07-05 22:22:19,364 [INFO] [backup]  **** backup script started *****
+2020-07-05 22:22:19,364 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-05 22:22:19,589 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-05 22:22:19,810 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-05 22:22:20,030 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-05 22:22:20,030 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-05 22:22:20,030 [INFO] [backup]  **** backup script finished ****
+
