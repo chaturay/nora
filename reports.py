@@ -4,7 +4,8 @@ import logging
 import calendar
 import datetime
 import pandas as pd
-from common import setup_logger
+from common import setup_logger,cleanup
+import argparse
 
 # set values for the parameters used in this module.
 REPORT_LOG_FILE_PATH="logs/reports.log"
@@ -13,6 +14,9 @@ REPORT_LOG_FILES=10
 REPORT_DEVICE_LIST=['m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02','m-cba-nsw-bellavista-sbc03','m-cba-nsw-bellavista-sbc04','m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02','m-cba-nsw-burwood-sbc03','m-cba-nsw-burwood-sbc04']
 REPORT_LOCAL_FILE_PATH='K:\REPORTS\\'
 HDR_LOCAL_PATH='K:\HDR\\'
+DAYS_TO_KEEP_REPORTS=60
+DAYS_TO_KEEP_HDR=365
+LOG_TO_CONSOLE=True
 
 def reports(begin_datetime,end_datetime,root_path,device_name):
 
@@ -22,7 +26,7 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
       
         
     logger=logging.getLogger("REPORTS")
-    logger.info("search for file(s) starting ")
+    logger.info("search for file(s) between %s - %s for %s",begin_datetime,end_datetime,root_path)
     file_count=0
     file_list=[]
 
@@ -35,7 +39,7 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
                         file_list.append(full_path)
                         
     except Exceptionn:
-         logger.exception("An Exception Occured")
+         logger.exception("!!!! Exception Occured !!!!")
          
 
     else:
@@ -45,9 +49,9 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
             logger.info("found %s file(s)",file_count)
     
             try:
-                logger.info("Loading file(s) starting ")
+                logger.info("loading file(s) starting ")
                 df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization','Memory Utilization','Signaling Sessions']) for file in file_list))
-                logger.info("Loaded %s file(s) ",len(file_list))
+                logger.info("loaded %s file(s) ",len(file_list))
 
                 tic = time.perf_counter()
                 logger.info("processing data... this may take a while")
@@ -59,46 +63,69 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
                 
                 
             except:
-                 logger.exception("An Exception Occured")
+                 logger.exception("!!!! Exception Occured !!!!")
 
             else:
                 toc = time.perf_counter()
-                logger.info(f"processing data complete. Operation took {toc-tic:0.4f} seconds")
+                logger.info(f"processing data complete.operation took {toc-tic:0.4f} seconds")
 
             try:
-                logger.info("Writing report to file - %s",device_name)
+                logger.info("writing report to file - %s",device_name)
                 df.to_csv(device_name)
                     
             except:
-                 logger.exception("An Exception Occured")
+                 logger.exception("!!!! Exception Occured !!!!")
                  
             else:
-                logger.info("Report writing completed")
+                logger.info("report writing completed\n")
         else:
-            logger.info("no files found matching the date range found for %s",root_path)
-  
-if __name__ == '__main__':
+            logger.info("no files found matching the date range found for %s \n",root_path)
 
+def main(b_date,e_date):
+        
     try:
-        logger_reports=setup_logger("REPORTS",REPORT_LOG_FILE_PATH,REPORT_LOG_SIZE,REPORT_LOG_FILES)      
+        # initialize logger
+        logger_reports=setup_logger("REPORTS",REPORT_LOG_FILE_PATH,REPORT_LOG_SIZE,REPORT_LOG_FILES,LOG_TO_CONSOLE)      
         logger_reports.info("**** reports script started ****")
 
-        today=datetime.date.today()
-        num_days=calendar.monthrange(today.year, today.month)[-1]
-        first_day=datetime.datetime(today.year,today.month,1)
-        last_day=datetime.datetime(today.year,today.month,num_days)
+
+
+        if ((b_date==None) or (e_date==None)):
+            today=datetime.date.today()
+            num_days=calendar.monthrange(today.year, today.month)[-1]
+            first_day=datetime.datetime(today.year,today.month,1)
+            last_day=datetime.datetime(today.year,today.month,num_days)
+
+        else:
+            first_day=b_date
+            last_day=e_date
 
               
         for name in REPORT_DEVICE_LIST:
             reports(first_day,last_day,HDR_LOCAL_PATH+f"{name}\system",REPORT_LOCAL_FILE_PATH+f"{name}.csv")
 
+        # purge old reports
+        cleanup(DAYS_TO_KEEP_REPORTS,REPORT_LOCAL_FILE_PATH,"REPORTS","Reports")
+
+        #purge old HDR files
+        cleanup(DAYS_TO_KEEP_HDR,HDR_LOCAL_PATH,"REPORTS","HDR")
+
     except Exception:
-        logger_reports.exception("An Exception Occured")
+        logger_reports.exception("!!! Exception Occured !!!!")
 
     else:
         logger_reports.info("**** report script finished ****\n")
 
     finally:
         logger_reports.handlers.pop()
+        
+  
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-b", type=datetime.datetime.fromisoformat, help="start date and time in YYYY-MM-DD HH:MM format")
+    parser.add_argument("-e", type=datetime.datetime.fromisoformat, help="end date and time in YYYY-MM-DD HH:MM format")
+    args = parser.parse_args()
+    
+    main(args.b,args.e)
 
      

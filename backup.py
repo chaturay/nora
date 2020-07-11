@@ -16,6 +16,7 @@ PRIVATE_KEY_PATH="C:\ProgramData\ssh\ssh_host_rsa_key"
 REMOTE_FILE_PATH='/code/gzConfig/dataDoc.gz'
 LOCAL_FILE_PATH='K:\BACKUP\\'
 DAYS_TO_KEEP_BACKUPS=30
+LOG_TO_CONSOLE=True
 
 def backup(logger_name):
     
@@ -38,7 +39,7 @@ def backup(logger_name):
                 sftp=pysftp.Connection(ip_address,username=SBC_SFTP_USER,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
                 
             except Exception:
-                logger_backup.exception("Exception Occured")
+                logger_backup.exception("!!!! Exception Occured !!!!")
                 logger_backup.error("unable to connect to device %s ",device_name)
                 logger_archive.error("backup of %s failed",device_name)
                 bkup_failed+=1
@@ -78,7 +79,7 @@ def backup(logger_name):
 if __name__ == '__main__':
 
     try:
-        logger_main=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX)
+        logger_main=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX,LOG_TO_CONSOLE)
             
     except Exception:
         logger_main.exception("!!!! Exception Occured !!!!")
