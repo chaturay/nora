@@ -1,7 +1,7 @@
 import time
 import pysftp
 import logging
-from common import setup_logger
+from common import setup_logger,cleanup
 
 # set values for the parameters used in this module.
 BACKUP_DEVICE_LIST={"m-cba-nsw-bellavista-sbc01":"10.10.1.13","m-cba-nsw-bellavista-sbc02":"10.10.1.13","m-cba-nsw-bellavista-sbc03":"10.10.1.13"}  
@@ -16,10 +16,10 @@ PRIVATE_KEY_PATH="C:\ProgramData\ssh\ssh_host_rsa_key"
 REMOTE_FILE_PATH='/code/gzConfig/dataDoc.gz'
 LOCAL_FILE_PATH='K:\BACKUP\\'
 
-def backup():
+def backup(logger_name):
     
     try:
-        logger_backup=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX)
+        logger_backup=logging.getLogger(logger_name)
         logger_archive=setup_logger("ARCHIVE",ARCH_LOG_FILE_PATH,ARCH_LOG_FILE_SIZE,ARCH_LOG_FILE_MAX)
         
         logger_backup.info("**** backup script started *****")
@@ -51,7 +51,7 @@ def backup():
                     bkup_sucessfull+=1
                     
                 except:
-                    logger_backup.exception("Exception Occured")
+                    logger_backup.exception("!!!! Exception Occured !!!!")
                     logger_backup.error("unable to retrive backup file from device %s ",device_name)
                     bkup_failed+=1
                     pass
@@ -71,9 +71,22 @@ def backup():
         
 
     finally:
-        logger_backup.handlers.pop()
         logger_archive.handlers.pop()
      
         
 if __name__ == '__main__':
-        backup()       
+
+    try:
+        logger_main=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX)
+            
+    except Exception:
+        logger_main.exception("!!!! Exception Occured !!!!")
+        logger_main.exception("unable to setup logger")
+
+    else:
+        backup("BACKUP")
+        cleanup(2,LOCAL_FILE_PATH,"BACKUP")
+        
+    finally:
+        logger_main.handlers.pop()
+        
