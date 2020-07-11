@@ -888,3 +888,485 @@
 2020-07-11 19:07:20,171 [INFO] [cleanup]  cleanup took 0.0193 seconds
 2020-07-11 19:07:20,171 [INFO] [cleanup]  ****  file cleanup finished ****
 
+2020-07-11 19:12:19,412 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:12:19,412 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:12:19,653 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:12:19,887 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:12:20,125 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:12:20,125 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:12:20,125 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:12:20,125 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:12:20,145 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:12:20,145 [INFO] [cleanup]  cleanup took 0.0198 seconds
+2020-07-11 19:12:20,145 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:17:19,391 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:17:19,391 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:17:19,633 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:17:19,870 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:17:20,103 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:17:20,103 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:17:20,103 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:17:20,103 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:17:20,123 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:17:20,127 [INFO] [cleanup]  cleanup took 0.0212 seconds
+2020-07-11 19:17:20,127 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:22:19,410 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:22:19,414 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:22:19,643 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:22:19,877 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:22:20,146 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:22:20,146 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:22:20,150 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:22:20,150 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:22:20,175 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:22:20,175 [INFO] [cleanup]  cleanup took 0.0245 seconds
+2020-07-11 19:22:20,175 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:27:19,391 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:27:19,391 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:27:19,628 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:27:19,861 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:27:20,099 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:27:20,103 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:27:20,103 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:27:20,103 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:27:20,127 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:27:20,127 [INFO] [cleanup]  cleanup took 0.0233 seconds
+2020-07-11 19:27:20,127 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:32:19,404 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:32:19,404 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:32:19,657 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:32:19,927 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:32:20,156 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:32:20,156 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:32:20,156 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:32:20,160 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:32:20,184 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:32:20,184 [INFO] [cleanup]  cleanup took 0.0254 seconds
+2020-07-11 19:32:20,184 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:37:19,376 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:37:19,380 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:37:19,609 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:37:19,833 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:37:20,054 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:37:20,058 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:37:20,058 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:37:20,058 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:37:20,078 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:37:20,078 [INFO] [cleanup]  cleanup took 0.0186 seconds
+2020-07-11 19:37:20,078 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:42:19,411 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:42:19,411 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:42:19,653 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:42:19,890 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:42:20,132 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:42:20,136 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:42:20,136 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:42:20,136 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:42:20,156 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:42:20,156 [INFO] [cleanup]  cleanup took 0.0194 seconds
+2020-07-11 19:42:20,156 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:47:19,379 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:47:19,379 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:47:19,600 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:47:19,812 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:47:20,025 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:47:20,025 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:47:20,025 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:47:20,025 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:47:20,046 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:47:20,046 [INFO] [cleanup]  cleanup took 0.0176 seconds
+2020-07-11 19:47:20,046 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:52:19,365 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:52:19,365 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:52:19,590 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:52:19,809 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:52:20,027 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:52:20,027 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:52:20,027 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:52:20,031 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:52:20,047 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:52:20,047 [INFO] [cleanup]  cleanup took 0.0191 seconds
+2020-07-11 19:52:20,051 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:57:19,353 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:57:19,353 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:57:19,583 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:57:19,801 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:57:20,022 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:57:20,022 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:57:20,022 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:57:20,022 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:57:20,042 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:57:20,046 [INFO] [cleanup]  cleanup took 0.0204 seconds
+2020-07-11 19:57:20,046 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:59:01,124 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:59:01,148 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:59:01,385 [ERROR] [backup]  !!!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\backup.py", line 50, in backup
+    sftp.get(REMOTE_FILE_PATH,LOCAL_FILE_PATH+timestr+device_name+".gz")
+  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 249, in get
+    self._sftp.get(remotepath, localpath, callback=callback)
+  File "C:\Program Files\Python38\lib\site-packages\paramiko\sftp_client.py", line 801, in get
+    with open(localpath, "wb") as fl:
+OSError: [Errno 22] Invalid argument: 'K:\\BACKUP\\2020-07-11-19:59:01-m-cba-nsw-bellavista-sbc01.gz'
+2020-07-11 19:59:01,470 [ERROR] [backup]  unable to retrive backup file from device m-cba-nsw-bellavista-sbc01 
+2020-07-11 19:59:01,687 [ERROR] [backup]  !!!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\backup.py", line 50, in backup
+    sftp.get(REMOTE_FILE_PATH,LOCAL_FILE_PATH+timestr+device_name+".gz")
+  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 249, in get
+    self._sftp.get(remotepath, localpath, callback=callback)
+  File "C:\Program Files\Python38\lib\site-packages\paramiko\sftp_client.py", line 801, in get
+    with open(localpath, "wb") as fl:
+OSError: [Errno 22] Invalid argument: 'K:\\BACKUP\\2020-07-11-19:59:01-m-cba-nsw-bellavista-sbc02.gz'
+2020-07-11 19:59:01,691 [ERROR] [backup]  unable to retrive backup file from device m-cba-nsw-bellavista-sbc02 
+2020-07-11 19:59:01,903 [ERROR] [backup]  !!!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\backup.py", line 50, in backup
+    sftp.get(REMOTE_FILE_PATH,LOCAL_FILE_PATH+timestr+device_name+".gz")
+  File "C:\Program Files\Python38\lib\site-packages\pysftp\__init__.py", line 249, in get
+    self._sftp.get(remotepath, localpath, callback=callback)
+  File "C:\Program Files\Python38\lib\site-packages\paramiko\sftp_client.py", line 801, in get
+    with open(localpath, "wb") as fl:
+OSError: [Errno 22] Invalid argument: 'K:\\BACKUP\\2020-07-11-19:59:01-m-cba-nsw-bellavista-sbc03.gz'
+2020-07-11 19:59:01,911 [ERROR] [backup]  unable to retrive backup file from device m-cba-nsw-bellavista-sbc03 
+2020-07-11 19:59:01,915 [INFO] [backup]  backed up 0 device(s) sucessfully. 3 device(s) failed
+2020-07-11 19:59:01,923 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:59:01,927 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:59:01,952 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:59:01,956 [INFO] [cleanup]  cleanup took 0.0218 seconds
+2020-07-11 19:59:01,960 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 19:59:58,837 [INFO] [backup]  **** backup script started *****
+2020-07-11 19:59:58,869 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 19:59:59,103 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 19:59:59,336 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 19:59:59,562 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 19:59:59,566 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 19:59:59,570 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 19:59:59,574 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 19:59:59,598 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:59:59,602 [INFO] [cleanup]  cleanup took 0.0205 seconds
+2020-07-11 19:59:59,610 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:02:19,360 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:02:19,360 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:02:19,590 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:02:19,835 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:02:20,053 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:02:20,057 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:02:20,057 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:02:20,057 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:02:20,077 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:02:20,077 [INFO] [cleanup]  cleanup took 0.0203 seconds
+2020-07-11 20:02:20,077 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:07:19,358 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:07:19,358 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:07:19,591 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:07:19,809 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:07:20,029 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:07:20,029 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:07:20,029 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:07:20,029 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:07:20,053 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:07:20,053 [INFO] [cleanup]  cleanup took 0.0214 seconds
+2020-07-11 20:07:20,053 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:12:19,391 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:12:19,391 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:12:19,637 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:12:19,884 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:12:20,122 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:12:20,126 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:12:20,126 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:12:20,126 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:12:20,150 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:12:20,150 [INFO] [cleanup]  cleanup took 0.0243 seconds
+2020-07-11 20:12:20,150 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:17:19,388 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:17:19,392 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:17:19,642 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:17:19,883 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:17:20,116 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:17:20,120 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:17:20,120 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:17:20,120 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:17:20,145 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:17:20,145 [INFO] [cleanup]  cleanup took 0.0243 seconds
+2020-07-11 20:17:20,145 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:22:19,369 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:22:19,369 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:22:19,586 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:22:19,791 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:22:20,000 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:22:20,004 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:22:20,004 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:22:20,004 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:22:20,024 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:22:20,024 [INFO] [cleanup]  cleanup took 0.0223 seconds
+2020-07-11 20:22:20,028 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:27:19,410 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:27:19,410 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:27:19,652 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:27:19,929 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:27:20,166 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:27:20,170 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:27:20,170 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:27:20,170 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:27:20,199 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:27:20,199 [INFO] [cleanup]  cleanup took 0.0265 seconds
+2020-07-11 20:27:20,199 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:32:19,397 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:32:19,397 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:32:19,675 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:32:19,905 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:32:20,135 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:32:20,139 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:32:20,139 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:32:20,139 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:32:20,163 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:32:20,167 [INFO] [cleanup]  cleanup took 0.0256 seconds
+2020-07-11 20:32:20,167 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:37:19,398 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:37:19,398 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:37:19,671 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:37:19,901 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:37:20,126 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:37:20,130 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:37:20,130 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:37:20,130 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:37:20,154 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:37:20,154 [INFO] [cleanup]  cleanup took 0.0250 seconds
+2020-07-11 20:37:20,154 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:42:19,421 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:42:19,421 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:42:19,670 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:42:19,915 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:42:20,153 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:42:20,157 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:42:20,157 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:42:20,157 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:42:20,185 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:42:20,185 [INFO] [cleanup]  cleanup took 0.0262 seconds
+2020-07-11 20:42:20,185 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:47:19,398 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:47:19,398 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:47:19,636 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:47:19,874 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:47:20,107 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:47:20,107 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:47:20,107 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:47:20,111 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:47:20,135 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:47:20,135 [INFO] [cleanup]  cleanup took 0.0266 seconds
+2020-07-11 20:47:20,135 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:52:19,399 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:52:19,399 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:52:19,637 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:52:19,879 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:52:20,113 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:52:20,113 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:52:20,113 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:52:20,113 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:52:20,141 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:52:20,141 [INFO] [cleanup]  cleanup took 0.0265 seconds
+2020-07-11 20:52:20,141 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 20:57:19,385 [INFO] [backup]  **** backup script started *****
+2020-07-11 20:57:19,385 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 20:57:19,606 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 20:57:19,816 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 20:57:20,042 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 20:57:20,046 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 20:57:20,046 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 20:57:20,046 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 20:57:20,070 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:57:20,070 [INFO] [cleanup]  cleanup took 0.0247 seconds
+2020-07-11 20:57:20,070 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:02:19,393 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:02:19,393 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:02:19,606 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:02:19,819 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:02:20,032 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:02:20,032 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:02:20,032 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:02:20,032 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:02:20,056 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:02:20,056 [INFO] [cleanup]  cleanup took 0.0232 seconds
+2020-07-11 21:02:20,056 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:07:19,397 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:07:19,397 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:07:19,635 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:07:19,859 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:07:20,089 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:07:20,089 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:07:20,093 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:07:20,093 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:07:20,117 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:07:20,121 [INFO] [cleanup]  cleanup took 0.0268 seconds
+2020-07-11 21:07:20,121 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:16:39,305 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:16:39,325 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:16:39,566 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:16:39,791 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:16:40,008 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:16:40,012 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:16:40,016 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:16:40,016 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:16:40,044 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:16:40,048 [INFO] [cleanup]  cleanup took 0.0255 seconds
+2020-07-11 21:16:40,048 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:17:12,070 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:17:12,070 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:17:12,299 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:17:12,524 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:17:12,745 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:17:12,745 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:17:12,745 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:17:12,745 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:17:12,761 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:17:12,765 [INFO] [cleanup]  cleanup took 0.0164 seconds
+2020-07-11 21:17:12,765 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:17:19,392 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:17:19,392 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:17:19,614 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:17:19,835 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:17:20,052 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:17:20,056 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:17:20,056 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:17:20,056 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:17:20,072 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:17:20,072 [INFO] [cleanup]  cleanup took 0.0165 seconds
+2020-07-11 21:17:20,072 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:20:30,756 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:20:30,764 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:20:31,009 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:20:31,266 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:20:31,510 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:20:31,514 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:20:31,514 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:20:31,518 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:20:31,550 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:20:31,554 [INFO] [cleanup]  cleanup took 0.0313 seconds
+2020-07-11 21:20:31,554 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:22:19,393 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:22:19,393 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:22:19,635 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:22:19,876 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:22:20,114 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:22:20,118 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:22:20,118 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:22:20,118 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:22:20,146 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:22:20,146 [INFO] [cleanup]  cleanup took 0.0281 seconds
+2020-07-11 21:22:20,146 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:27:19,402 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:27:19,402 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:27:19,689 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:27:19,922 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:27:20,160 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:27:20,160 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:27:20,160 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:27:20,164 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:27:20,192 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:27:20,192 [INFO] [cleanup]  cleanup took 0.0299 seconds
+2020-07-11 21:27:20,192 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:32:19,407 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:32:19,407 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:32:19,648 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:32:19,877 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:32:20,111 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:32:20,111 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:32:20,111 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:32:20,111 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:32:20,144 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:32:20,144 [INFO] [cleanup]  cleanup took 0.0304 seconds
+2020-07-11 21:32:20,144 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:33:59,114 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:33:59,118 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:33:59,396 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:33:59,674 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:33:59,903 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:33:59,907 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:33:59,911 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:33:59,912 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:33:59,944 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:33:59,944 [INFO] [cleanup]  cleanup took 0.0296 seconds
+2020-07-11 21:33:59,948 [INFO] [cleanup]  ****  file cleanup finished ****
+
+2020-07-11 21:34:11,767 [INFO] [backup]  **** backup script started *****
+2020-07-11 21:34:11,767 [INFO] [backup]  starting backup of 3 device(s)
+2020-07-11 21:34:11,988 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc01 completed
+2020-07-11 21:34:12,201 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc02 completed
+2020-07-11 21:34:12,408 [INFO] [backup]  backup of m-cba-nsw-bellavista-sbc03 completed
+2020-07-11 21:34:12,408 [INFO] [backup]  backed up 3 device(s) sucessfully. 0 device(s) failed
+2020-07-11 21:34:12,413 [INFO] [backup]  **** backup script finished ****
+
+2020-07-11 21:34:12,413 [INFO] [cleanup]  ****  file cleanup starting ****
+2020-07-11 21:34:12,433 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 21:34:12,433 [INFO] [cleanup]  cleanup took 0.0183 seconds
+2020-07-11 21:34:12,433 [INFO] [cleanup]  ****  file cleanup finished ****
+

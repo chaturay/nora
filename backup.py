@@ -2,21 +2,25 @@ import time
 import pysftp
 import logging
 from common import setup_logger,cleanup
+from config import backup_settings
 
-# set values for the parameters used in this module.
-BACKUP_DEVICE_LIST={"m-cba-nsw-bellavista-sbc01":"10.10.1.13","m-cba-nsw-bellavista-sbc02":"10.10.1.13","m-cba-nsw-bellavista-sbc03":"10.10.1.13"}  
-SBC_SFTP_USER= 'sftp'
-BKUP_LOG_FILE_PATH="logs/backup.log"
-BKUP_LOG_FILE_SIZE=1024*1024
-BKUP_LOG_FILE_MAX=10
-ARCH_LOG_FILE_PATH="logs/archive.log"
-ARCH_LOG_FILE_SIZE=1024*1024
-ARCH_LOG_FILE_MAX=10
-PRIVATE_KEY_PATH="C:\ProgramData\ssh\ssh_host_rsa_key"
-REMOTE_FILE_PATH='/code/gzConfig/dataDoc.gz'
-LOCAL_FILE_PATH='K:\BACKUP\\'
-DAYS_TO_KEEP_BACKUPS=30
-LOG_TO_CONSOLE=True
+# set values for the parameters used in this module from config.py
+
+settings=backup_settings()
+
+BACKUP_DEVICE_LIST=settings.BACKUP_DEVICE_LIST
+SFTP_USER_NAME=settings.SFTP_USER_NAME
+BKUP_LOG_FILE_PATH=settings.BKUP_LOG_FILE_PATH
+BKUP_LOG_FILE_SIZE=settings.BKUP_LOG_FILE_SIZE
+BKUP_LOG_FILE_MAX=settings.BKUP_LOG_FILE_MAX
+ARCH_LOG_FILE_PATH=settings.ARCH_LOG_FILE_PATH
+ARCH_LOG_FILE_SIZE=settings.ARCH_LOG_FILE_SIZE
+ARCH_LOG_FILE_MAX=settings.ARCH_LOG_FILE_MAX
+PRIVATE_KEY_PATH=settings.PRIVATE_KEY_PATH
+REMOTE_FILE_PATH=settings.REMOTE_FILE_PATH
+LOCAL_FILE_PATH=settings.LOCAL_FILE_PATH
+DAYS_TO_KEEP_BACKUPS=settings.DAYS_TO_KEEP_BACKUPS
+LOG_TO_CONSOLE=settings.LOG_TO_CONSOLE
 
 def backup(logger_name):
     
@@ -29,14 +33,14 @@ def backup(logger_name):
         
         bkup_sucessfull=0
         bkup_failed=0
-        timestr = time.strftime("%Y%m%d%H%M%S-")
+        timestr = time.strftime("%Y-%m-%d-%H%M%S-")
         cnopts = pysftp.CnOpts()
         cnopts.hostkeys = None
         sftp = None
        
         for (device_name,ip_address) in BACKUP_DEVICE_LIST.items():
             try:
-                sftp=pysftp.Connection(ip_address,username=SBC_SFTP_USER,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
+                sftp=pysftp.Connection(ip_address,username=SFTP_USER_NAME,private_key=PRIVATE_KEY_PATH,cnopts=cnopts)
                 
             except Exception:
                 logger_backup.exception("!!!! Exception Occured !!!!")

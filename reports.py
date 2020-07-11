@@ -6,6 +6,7 @@ import datetime
 import pandas as pd
 from common import setup_logger,cleanup
 import argparse
+import json
 
 # set values for the parameters used in this module.
 REPORT_LOG_FILE_PATH="logs/reports.log"
@@ -18,20 +19,22 @@ DAYS_TO_KEEP_REPORTS=60
 DAYS_TO_KEEP_HDR=365
 LOG_TO_CONSOLE=True
 
-def reports(begin_datetime,end_datetime,root_path,device_name):
+def reports(begin_datetime,end_datetime,device_name):
 
     begin_epoch=begin_datetime.timestamp()
     end_epoch=end_datetime.timestamp()
 
-      
+    timestr = time.strftime("%Y-%m-%d-%H%M%S-")
+    report_path=REPORT_LOCAL_FILE_PATH+timestr+f"{device_name}.csv"
+    hdr_path=HDR_LOCAL_PATH+f"{device_name}\system"  
         
     logger=logging.getLogger("REPORTS")
-    logger.info("search for file(s) between %s - %s for %s",begin_datetime,end_datetime,root_path)
+    logger.info("search for file(s) between %s - %s for %s",begin_datetime,end_datetime,hdr_path)
     file_count=0
     file_list=[]
 
     try:
-        for root, dirs, files in os.walk(root_path, topdown=False):
+        for root, dirs, files in os.walk(hdr_path, topdown=False):
             for file in files:
                 full_path = os.path.join(root, file)
                 stat = os.stat(full_path)
@@ -68,10 +71,9 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
             else:
                 toc = time.perf_counter()
                 logger.info(f"processing data complete.operation took {toc-tic:0.4f} seconds")
-
             try:
-                logger.info("writing report to file - %s",device_name)
-                df.to_csv(device_name)
+                logger.info("writing report to file - %s",report_path)
+                df.to_csv(report_path)
                     
             except:
                  logger.exception("!!!! Exception Occured !!!!")
@@ -79,7 +81,7 @@ def reports(begin_datetime,end_datetime,root_path,device_name):
             else:
                 logger.info("report writing completed\n")
         else:
-            logger.info("no files found matching the date range found for %s \n",root_path)
+            logger.info("no files found matching the date range for %s \n",hdr_path)
 
 def main(b_date,e_date):
         
@@ -102,7 +104,7 @@ def main(b_date,e_date):
 
               
         for name in REPORT_DEVICE_LIST:
-            reports(first_day,last_day,HDR_LOCAL_PATH+f"{name}\system",REPORT_LOCAL_FILE_PATH+f"{name}.csv")
+            reports(first_day,last_day,name)
 
         # purge old reports
         cleanup(DAYS_TO_KEEP_REPORTS,REPORT_LOCAL_FILE_PATH,"REPORTS","Reports")

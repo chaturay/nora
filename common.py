@@ -15,7 +15,8 @@ def setup_logger(name, log_file,file_size,file_count,log_to_console=False,level=
     logger = logging.getLogger(name)
     logger.setLevel(level)
     logger.addHandler(file_handler)
-
+    
+    # if log_to_console is True, then enable logging to stdout as well
     if log_to_console:
         stream_handler=logging.StreamHandler(sys.stdout)
         stream_handler.setFormatter(FORMATTER)

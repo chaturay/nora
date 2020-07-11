@@ -742,3 +742,372 @@ NameError: name 'Exceptionn' is not defined
 2020-07-11 19:09:24,672 [INFO] [cleanup]  **** Reports file cleanup finished ****
 
 2020-07-11 19:09:24,676 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:35:55,252 [INFO] [main]  **** reports script started ****
+2020-07-11 19:35:55,260 [ERROR] [main]  !!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 106, in main
+    reports(first_day,last_day,HDR_LOCAL_PATH+f"{name}\system",REPORT_LOCAL_FILE_PATH+f"{name}.csv")
+TypeError: reports() takes 3 positional arguments but 4 were given
+2020-07-11 19:36:32,306 [INFO] [main]  **** reports script started ****
+2020-07-11 19:36:32,314 [ERROR] [main]  !!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 106, in main
+    reports(first_day,last_day,name)
+  File "C:\nora\reports.py", line 30, in reports
+    logger.info("search for file(s) between %s - %s for %s",begin_datetime,end_datetime,root_path)
+NameError: name 'root_path' is not defined
+2020-07-11 19:37:19,247 [INFO] [main]  **** reports script started ****
+2020-07-11 19:37:19,255 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:37:25,233 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:37:25,237 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:37:26,251 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:37:26,295 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:37:26,448 [INFO] [reports]  processing data complete.operation took 0.1532 seconds
+2020-07-11 19:37:26,452 [INFO] [reports]  writing report to file - K:\REPORTS\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:37:26,468 [INFO] [reports]  report writing completed
+
+2020-07-11 19:37:26,476 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:37:26,480 [ERROR] [main]  !!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 106, in main
+    reports(first_day,last_day,name)
+  File "C:\nora\reports.py", line 83, in reports
+    logger.info("no files found matching the date range found for %s \n",root_path)
+NameError: name 'root_path' is not defined
+2020-07-11 19:38:03,884 [INFO] [main]  **** reports script started ****
+2020-07-11 19:38:03,892 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:38:09,698 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:38:09,706 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:38:10,747 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:38:10,759 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:38:10,904 [INFO] [reports]  processing data complete.operation took 0.1435 seconds
+2020-07-11 19:38:10,908 [INFO] [reports]  writing report to file - K:\REPORTS\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:38:10,920 [INFO] [reports]  report writing completed
+
+2020-07-11 19:38:10,928 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:38:10,936 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:38:10,940 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:38:10,948 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:38:10,956 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:38:10,960 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:38:10,972 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:38:10,976 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:38:10,985 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:38:10,989 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:38:10,997 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:38:11,006 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:38:11,014 [INFO] [cleanup]  cleanup took 0.0003 seconds
+2020-07-11 19:38:11,022 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:38:11,030 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:39:20,437 [INFO] [main]  **** reports script started ****
+2020-07-11 19:39:20,449 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:39:26,430 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:39:26,438 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:39:27,448 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:39:27,497 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:39:27,645 [INFO] [reports]  processing data complete.operation took 0.1486 seconds
+2020-07-11 19:39:27,649 [INFO] [reports]  writing report to file - K:\REPORTS\\TEST\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:39:27,661 [INFO] [reports]  report writing completed
+
+2020-07-11 19:39:27,669 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:39:27,677 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:39:27,681 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:39:27,689 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:39:27,697 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:39:27,702 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:39:27,714 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:39:27,718 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:39:27,726 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:39:27,734 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:39:27,742 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:39:27,751 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:39:27,755 [INFO] [cleanup]  cleanup took 0.0004 seconds
+2020-07-11 19:39:27,763 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:39:27,771 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:40:53,319 [INFO] [main]  **** reports script started ****
+2020-07-11 19:40:53,327 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:40:59,088 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:40:59,092 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:41:00,098 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:41:00,146 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:41:00,295 [INFO] [reports]  processing data complete.operation took 0.1480 seconds
+2020-07-11 19:41:00,299 [INFO] [reports]  writing report to file - K:\REPORTS\TEST\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:41:00,315 [INFO] [reports]  report writing completed
+
+2020-07-11 19:41:00,323 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:41:00,328 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:41:00,336 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:41:00,340 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:41:00,349 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:41:00,357 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:41:00,369 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:41:00,373 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:41:00,383 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:41:00,387 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:41:00,395 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:41:00,403 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:41:00,407 [INFO] [cleanup]  cleanup took 0.0003 seconds
+2020-07-11 19:41:00,415 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:41:00,424 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:43:56,152 [INFO] [main]  **** reports script started ****
+2020-07-11 19:43:56,164 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:44:01,845 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:44:01,849 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:44:02,851 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:44:02,895 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:44:03,048 [INFO] [reports]  processing data complete.operation took 0.1514 seconds
+2020-07-11 19:44:03,052 [INFO] [reports]  writing report to file - K:\REPORTS\TEST\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:44:03,060 [ERROR] [reports]  !!!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 74, in reports
+    df.to_csv(report_path)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Program Files\Python38\lib\site-packages\pandas\io\formats\csvs.py", line 184, in save
+    f, handles = get_handle(
+  File "C:\Program Files\Python38\lib\site-packages\pandas\io\common.py", line 455, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: 'K:\\REPORTS\\TEST\\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv'
+2020-07-11 19:44:03,173 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:44:03,177 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:44:03,185 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:44:03,193 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:44:03,201 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:44:03,209 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:44:03,217 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:44:03,221 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:44:03,231 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:44:03,235 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:44:03,243 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:44:03,247 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:44:03,251 [INFO] [cleanup]  cleanup took 0.0003 seconds
+2020-07-11 19:44:03,263 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:44:03,267 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:45:48,401 [INFO] [main]  **** reports script started ****
+2020-07-11 19:45:48,405 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:45:54,115 [INFO] [reports]  found 398 file(s)
+2020-07-11 19:45:54,167 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:45:55,194 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 19:45:55,222 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:45:55,371 [INFO] [reports]  processing data complete.operation took 0.1509 seconds
+2020-07-11 19:45:55,379 [INFO] [reports]  writing report to file - K:\REPORTS\TEST\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:45:55,387 [INFO] [reports]  report writing completed
+
+2020-07-11 19:45:55,399 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:45:55,407 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:45:55,415 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:45:55,423 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:45:55,427 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:45:55,435 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:45:55,439 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:45:55,449 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:45:55,457 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:45:55,461 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:45:55,473 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:45:55,477 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:45:55,485 [INFO] [cleanup]  cleanup took 0.0006 seconds
+2020-07-11 19:45:55,489 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:45:55,498 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:48:47,803 [INFO] [main]  **** reports script started ****
+2020-07-11 19:48:47,803 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:48:53,683 [INFO] [reports]  found 23332 file(s)
+2020-07-11 19:48:53,687 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:51:43,670 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:51:43,678 [INFO] [cleanup]  cleanup took 348.1735 seconds
+2020-07-11 19:51:43,686 [INFO] [cleanup]  **** HDR file cleanup finished ****
+
+2020-07-11 19:51:43,694 [INFO] [main]  **** report script finished ****
+
+2020-07-11 19:52:24,090 [INFO] [reports]  loaded 23332 file(s) 
+2020-07-11 19:52:24,090 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:52:27,665 [INFO] [reports]  processing data complete.operation took 3.5747 seconds
+2020-07-11 19:52:27,665 [INFO] [reports]  writing report to file - K:\REPORTS\TEST\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:52:27,669 [ERROR] [reports]  !!!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "reports.py", line 74, in reports
+    df.to_csv(report_path)
+  File "C:\Program Files\Python38\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Program Files\Python38\lib\site-packages\pandas\io\formats\csvs.py", line 184, in save
+    f, handles = get_handle(
+  File "C:\Program Files\Python38\lib\site-packages\pandas\io\common.py", line 455, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: 'K:\\REPORTS\\TEST\\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv'
+2020-07-11 19:52:27,681 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:52:27,681 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:52:27,685 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:52:27,685 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:52:27,685 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:52:27,689 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:52:27,689 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:52:27,689 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:52:27,689 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:52:27,693 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:52:27,693 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:52:27,697 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:52:27,697 [INFO] [cleanup]  cleanup took 0.0003 seconds
+2020-07-11 19:52:27,697 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:52:27,697 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 19:53:41,742 [INFO] [main]  **** reports script started ****
+2020-07-11 19:53:41,746 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:53:45,062 [ERROR] [main]  !!! Exception Occured !!!!
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 38, in reports
+    stat = os.stat(full_path)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\nora\reports.py", line 105, in main
+    reports(first_day,last_day,name)
+  File "C:\nora\reports.py", line 42, in reports
+    except Exceptionn:
+NameError: name 'Exceptionn' is not defined
+2020-07-11 19:53:53,149 [INFO] [main]  **** reports script started ****
+2020-07-11 19:53:53,149 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 19:53:58,567 [INFO] [reports]  found 23332 file(s)
+2020-07-11 19:53:58,567 [INFO] [reports]  loading file(s) starting 
+2020-07-11 19:54:57,504 [INFO] [reports]  loaded 23332 file(s) 
+2020-07-11 19:54:57,504 [INFO] [reports]  processing data... this may take a while
+2020-07-11 19:54:58,457 [INFO] [reports]  processing data complete.operation took 0.9551 seconds
+2020-07-11 19:54:58,461 [INFO] [reports]  writing report to file - K:\REPORTS\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 19:54:58,466 [INFO] [reports]  report writing completed
+
+2020-07-11 19:54:58,474 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 19:54:58,474 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 19:54:58,478 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 19:54:58,478 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 19:54:58,478 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 19:54:58,478 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 19:54:58,482 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 19:54:58,482 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 19:54:58,486 [INFO] [reports]  search for file(s) between 2020-06-01 00:00:00 - 2020-07-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 19:54:58,490 [INFO] [reports]  no files found matching the date range found for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 19:54:58,490 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 19:54:58,490 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 19:54:58,490 [INFO] [cleanup]  cleanup took 0.0002 seconds
+2020-07-11 19:54:58,490 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 19:54:58,494 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 20:00:52,313 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:00:52,313 [INFO] [cleanup]  cleanup took 353.8239 seconds
+2020-07-11 20:00:52,317 [INFO] [cleanup]  **** HDR file cleanup finished ****
+
+2020-07-11 20:00:52,317 [INFO] [main]  **** report script finished ****
+
+2020-07-11 20:01:30,714 [INFO] [main]  **** reports script started ****
+2020-07-11 20:01:30,722 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 20:01:36,129 [INFO] [reports]  found 398 file(s)
+2020-07-11 20:01:36,161 [INFO] [reports]  loading file(s) starting 
+2020-07-11 20:01:37,176 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 20:01:37,224 [INFO] [reports]  processing data... this may take a while
+2020-07-11 20:01:37,374 [INFO] [reports]  processing data complete.operation took 0.1510 seconds
+2020-07-11 20:01:37,382 [INFO] [reports]  writing report to file - K:\REPORTS\2020-07-11-200130-m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 20:01:37,398 [INFO] [reports]  report writing completed
+
+2020-07-11 20:01:37,406 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 20:01:37,410 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 20:01:37,418 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 20:01:37,426 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 20:01:37,430 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 20:01:37,442 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 20:01:37,446 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 20:01:37,458 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 20:01:37,462 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-07-31 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 20:01:37,470 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 20:01:37,478 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 20:01:37,482 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:01:37,493 [INFO] [cleanup]  cleanup took 0.0004 seconds
+2020-07-11 20:01:37,497 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 20:01:37,501 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 20:03:32,727 [INFO] [main]  **** reports script started ****
+2020-07-11 20:03:32,727 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02\system
+2020-07-11 20:03:37,968 [INFO] [reports]  found 398 file(s)
+2020-07-11 20:03:37,968 [INFO] [reports]  loading file(s) starting 
+2020-07-11 20:03:39,002 [INFO] [reports]  loaded 398 file(s) 
+2020-07-11 20:03:39,002 [INFO] [reports]  processing data... this may take a while
+2020-07-11 20:03:39,157 [INFO] [reports]  processing data complete.operation took 0.1539 seconds
+2020-07-11 20:03:39,161 [INFO] [reports]  writing report to file - K:\REPORTS\2020-07-11-200332-m-cba-nsw-bellavista-sbc01_m-cba-nsw-bellavista-sbc02.csv
+2020-07-11 20:03:39,165 [INFO] [reports]  report writing completed
+
+2020-07-11 20:03:39,169 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc03\system
+2020-07-11 20:03:39,169 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-bellavista-sbc03\system 
+
+2020-07-11 20:03:39,169 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-bellavista-sbc04\system
+2020-07-11 20:03:39,173 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-bellavista-sbc04\system 
+
+2020-07-11 20:03:39,177 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system
+2020-07-11 20:03:39,177 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc01_m-cba-nsw-burwood-sbc02\system 
+
+2020-07-11 20:03:39,177 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc03\system
+2020-07-11 20:03:39,181 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc03\system 
+
+2020-07-11 20:03:39,181 [INFO] [reports]  search for file(s) between 2020-07-01 00:00:00 - 2020-08-01 00:00:00 for K:\HDR\m-cba-nsw-burwood-sbc04\system
+2020-07-11 20:03:39,186 [INFO] [reports]  no files found matching the date range for K:\HDR\m-cba-nsw-burwood-sbc04\system 
+
+2020-07-11 20:03:39,186 [INFO] [cleanup]  **** Reports file cleanup starting ****
+2020-07-11 20:03:39,189 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:03:39,193 [INFO] [cleanup]  cleanup took 0.0004 seconds
+2020-07-11 20:03:39,193 [INFO] [cleanup]  **** Reports file cleanup finished ****
+
+2020-07-11 20:03:39,193 [INFO] [cleanup]  **** HDR file cleanup starting ****
+2020-07-11 20:07:33,001 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:07:33,009 [INFO] [cleanup]  cleanup took 355.4957 seconds
+2020-07-11 20:07:33,013 [INFO] [cleanup]  **** HDR file cleanup finished ****
+
+2020-07-11 20:07:33,017 [INFO] [main]  **** report script finished ****
+
+2020-07-11 20:09:27,903 [INFO] [cleanup]  sucessfully deleted 0 file(s),
+2020-07-11 20:09:27,903 [INFO] [cleanup]  cleanup took 348.7119 seconds
+2020-07-11 20:09:27,907 [INFO] [cleanup]  **** HDR file cleanup finished ****
+
+2020-07-11 20:09:27,907 [INFO] [main]  **** report script finished ****
+
