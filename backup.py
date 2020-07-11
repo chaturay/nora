@@ -15,6 +15,7 @@ ARCH_LOG_FILE_MAX=10
 PRIVATE_KEY_PATH="C:\ProgramData\ssh\ssh_host_rsa_key"
 REMOTE_FILE_PATH='/code/gzConfig/dataDoc.gz'
 LOCAL_FILE_PATH='K:\BACKUP\\'
+DAYS_TO_KEEP_BACKUPS=30
 
 def backup(logger_name):
     
@@ -85,7 +86,7 @@ if __name__ == '__main__':
 
     else:
         backup("BACKUP")
-        cleanup(2,LOCAL_FILE_PATH,"BACKUP")
+        cleanup(DAYS_TO_KEEP_BACKUPS,LOCAL_FILE_PATH,"BACKUP")
         
     finally:
         logger_main.handlers.pop()
