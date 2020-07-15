@@ -30,10 +30,10 @@ def cleanup (number_of_days,root_path,logger_name,prefix=""):
         count=0
         
         logger=logging.getLogger(logger_name)
-        logger.info("**** %s file cleanup starting ****",prefix)
+        logger.info("%s file cleanup starting",prefix)
         tic = time.perf_counter()
         try:
-            for root, dirs, files in os.walk(root_path, topdown=False):
+            for root, dirs, files in os.walk(root_path,onerror=None, topdown=True):
                 for file in files:
                     full_path = os.path.join(root, file)
                     stat = os.stat(full_path)
@@ -49,5 +49,5 @@ def cleanup (number_of_days,root_path,logger_name,prefix=""):
             toc = time.perf_counter()
             logger.info("sucessfully deleted %s file(s),",count)
             logger.info(f"cleanup took {toc-tic:0.4f} seconds")
-            logger.info("**** %s file cleanup finished ****\n",prefix)
+            logger.info("%s file cleanup finished\n",prefix)
             
