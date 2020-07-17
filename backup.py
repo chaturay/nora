@@ -103,11 +103,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     #initialize arguments
-    parser.add_argument("-c",action="store_false",help="run cleanup script after main task? True/False")
+    parser.add_argument("-c","--cleanup",action="store_true",dest="value_cleanup",help="run cleanup script after main task")
     args = parser.parse_args()
 
     #Call main function with areguments from parser.
-    print(args.c)
-    main(args.c)
+    main(args.value_cleanup)
 
         

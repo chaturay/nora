@@ -59,6 +59,7 @@ def reports(begin_datetime,end_datetime,device_name):
                 df=pd.concat((pd.read_csv(file,usecols=['TimeStamp','CPU Utilization','Memory Utilization','Signaling Sessions']) for file in file_list))
                 logger.info("loaded %s file(s) ",len(file_list))
 
+                # Start timer 
                 tic = time.perf_counter()
                 logger.info("processing data.this may take a while...")
                 df['TimeStamp']=pd.DatetimeIndex(pd.to_datetime(df['TimeStamp'],unit='s')).tz_localize('UTC').tz_convert('Australia/Sydney')
@@ -117,7 +118,7 @@ def main(b_date,e_date,clean):
             first_day=b_date
             last_day=e_date
 
-              
+        # Call reports function with begin and end date      
         for name in REPORT_DEVICE_LIST:
             reports(first_day,last_day,name)
 
@@ -144,11 +145,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     #initialize arguments
-    parser.add_argument("-b", type=datetime.datetime.fromisoformat,default=None, help="start date and time in YYYY-MM-DD HH:MM format")
-    parser.add_argument("-e", type=datetime.datetime.fromisoformat,default=None help="end date and time in YYYY-MM-DD HH:MM format")
-    parser.add_argument("-c", type=bool, default=False, help="run cleanup script after main task? True/False")
+    parser.add_argument("-b",type=datetime.datetime.fromisoformat,default=None,help="start date and time in YYYY-MM-DD HH:MM format")
+    parser.add_argument("-e",type=datetime.datetime.fromisoformat,default=None,help="end date and time in YYYY-MM-DD HH:MM format")
+    parser.add_argument("-c","--cleanup",action="store_true",dest="value_cleanup",help="run cleanup script after main task")
     args = parser.parse_args()
 
     #Call main function with areguments from parser.
-    main(args.b,args.e,args.c)
+    main(args.b,args.e,args.value_cleanup)
      
