@@ -30,8 +30,9 @@ def cleanup (number_of_days,root_path,logger_name,prefix=""):
         count=0
         
         logger=logging.getLogger(logger_name)
-        logger.info("%s file cleanup starting",prefix)
+        logger.info("%s file cleanup started",prefix)
         tic = time.perf_counter()
+        logger.info("searching & deleting %s files older than %s day(s). This may take a while",prefix,number_of_days)
         try:
             for root, dirs, files in os.walk(root_path,onerror=None, topdown=True):
                 for file in files:

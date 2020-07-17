@@ -1,5 +1,4 @@
 class backup_settings:
-
     # settings used by backup.py
     BACKUP_DEVICE_LIST={"m-cba-nsw-bellavista-sbc01":"10.10.1.13","m-cba-nsw-bellavista-sbc02":"10.10.1.13","m-cba-nsw-bellavista-sbc03":"10.10.1.13"}  
     SFTP_USER_NAME= 'sftp'
@@ -15,7 +14,9 @@ class backup_settings:
     DAYS_TO_KEEP_BACKUPS=30
     LOG_TO_CONSOLE=True
 
+    
 class reports_settings:
+    # settings used by reports.py
     REPORT_LOG_FILE_PATH="logs/reports.log"
     REPORT_LOG_SIZE=1024*1024
     REPORT_LOG_FILES=10
@@ -23,5 +24,5 @@ class reports_settings:
     REPORT_LOCAL_FILE_PATH='K:\REPORTS\\'
     HDR_LOCAL_PATH='K:\HDR\\'
     DAYS_TO_KEEP_REPORTS=60
-    DAYS_TO_KEEP_HDR=365
+    DAYS_TO_KEEP_HDR=90
     LOG_TO_CONSOLE=True

@@ -2,6 +2,7 @@ import time
 import pysftp
 import logging
 from common import setup_logger,cleanup
+import argparse
 from config import backup_settings
 
 # set values for the parameters used in this module from config.py
@@ -79,9 +80,7 @@ def backup(logger_name):
     finally:
         logger_archive.handlers.pop()
      
-        
-if __name__ == '__main__':
-
+def main(clean):
     try:
         logger_main=setup_logger("BACKUP",BKUP_LOG_FILE_PATH,BKUP_LOG_FILE_SIZE,BKUP_LOG_FILE_MAX,LOG_TO_CONSOLE)
             
@@ -91,8 +90,24 @@ if __name__ == '__main__':
 
     else:
         backup("BACKUP")
-        cleanup(DAYS_TO_KEEP_BACKUPS,LOCAL_FILE_PATH,"BACKUP")
+        print(clean)
+        if clean:
+            cleanup(DAYS_TO_KEEP_BACKUPS,LOCAL_FILE_PATH,"BACKUP")
         
     finally:
         logger_main.handlers.pop()
+        
+if __name__ == '__main__':
+
+    #initialize argument parser
+    parser = argparse.ArgumentParser()
+
+    #initialize arguments
+    parser.add_argument("-c",action="store_false",help="run cleanup script after main task? True/False")
+    args = parser.parse_args()
+
+    #Call main function with areguments from parser.
+    print(args.c)
+    main(args.c)
+
         
