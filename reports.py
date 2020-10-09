@@ -44,7 +44,7 @@ def reports(begin_datetime,end_datetime,device_name):
                 if ((stat.st_mtime <= end_epoch) & (stat.st_mtime >= begin_epoch)):
                         file_list.append(full_path)
                         
-    except Exceptionn:
+    except Exception:
          logger.exception("!!!! Exception Occured !!!!")
          
 
@@ -111,7 +111,7 @@ def main(b_date,e_date,clean):
 
             # Find the first and last days of the month
             first_day=datetime.datetime(last_month.year,last_month.month,1)
-            last_day=datetime.datetime(last_month.year,last_month.month,num_days)
+            last_day=datetime.datetime(last_month.year,last_month.month,num_days,23,59,59)
 
         else:
             # If date arguments are not None assign parsed arguments to first and last day
